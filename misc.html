@@ -1,4 +1,148 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misc</title>
+    <link rel="stylesheet" href="indexStyles.css"/>
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body class="miscbg">
+    <aside id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">Apothecary</span>
+                <button  onclick=toggleSidebar() id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+                </button>
+            </li>
+            <li>
+                <a href="index.html">
+                    <!--Home Icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+               <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <!--Interests Icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                    <span>Interests</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+               </button>
+               <ul class="sub-menu">
+                <div>
+                    <li><a href="interests.html#characters">Characters</a></li>
+                    <li><a href="interests.html#music">Music</a></li>
+                    <li><a href="interests.html#games">Games</a></li>
+                    <li><a href="interests.html#anime">Anime</a></li>
+                    <li><a href="interests.html#manga">Manga</a></li>
+                </div>
+               </ul>
+            </li>
+
+            <li>
+                <a href="portfolio.html">
+                    <!--Portfolio Icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-80q-33 0-56.5-23.5T40-160v-440h80v440h680v80H120Zm160-160q-33 0-56.5-23.5T200-320v-440h200v-80q0-33 23.5-56.5T480-920h160q33 0 56.5 23.5T720-840v80h200v440q0 33-23.5 56.5T840-240H280Zm0-80h560v-360H280v360Zm200-440h160v-80H480v80ZM280-320v-360 360Z"/></svg>
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li class="active">
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <!--Misc Icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                    <span>Misc</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="misc.html#pjsk">PJSK Teiring</a></li>
+                        <li><a href="misc.html#skating">Inline Skating</a></li>
+                        <li><a href="misc.html#wingspan">Wingspan</a></li>
+                        <li><a href="misc.html#keyboard">Keyboard Modding</a></li>
+                        <li><a href="misc.html#musicpro">Music Projects</a></li>
+                    </div>
+                    
+                </ul>
+            </li>
+            <li>
+            </li>
+            
+        </ul>
+    </aside>
+    <main>
+        <!--Project Sekai Teiring-->
+        <div class="container">
+            <h1 id="pjsk">Project Sekai</h1><hr>
+            <p> After playing Project sekai for half a year, I decided to try teiring for the very first time.
+            I ended up choosing the event <i>To One Day Reach that Flowery Stage</i> (More More Jump World Link) because
+            the cards looekd pretty. I saved a pretty good amount of reasources and I had plenty of time
+            on my hands since it was the summer semester for college.
+            </p>
+            <h3>PJSK Tiering Energy Table</h3>
+            <table>
+                <tr id="tableheader">
+                    <th></th>
+                    <th class="airi">Day 1</th>
+                    <th class="airi">Day 2</th>
+                    <th class="airi">Day 3</th>
+                    <th class="haru">Day 4</th>
+                    <th class="haru">Day 5</th>
+                    <th class="haru">Day 6</th>
+                    <th class="shizu">Day 7</th>
+                    <th class="shizu">Day 8</th>
+                    <th class="shizu">Day 9</th>
+                    <th class="mino">Day 10</th>
+                    <th class="mino">Day 11</th>
+                    <th class="mino">Day 12</th>      
+                </tr>
+                <tr>
+                    <td>Energy</td>
+                    <td>x51 Bonus Energy Drink(L)<br>
+                        x92 Bonus Energy Drink(S)</td>
+                    <td>1413</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!--Inline Skating-->
+        <div class="container">
+            <h1 id="skating">Inline Skating</h1><hr>
+            <p>I like to roller skate</p>
+        </div>
+       <!--Wingspan-->
+       <div class="container">
+            <h1 id="wingspan">Wingspan</h1><hr>
+            <p>Wingspan is a board game I discovered my first year of college.</p>
+       </div>
+       <!--Keyboard Modding-->
+       <div class="container">
+            <h1 id="keyboard">Keyboard Modding</h1><hr>
+            <p>With my interest in computer gaming, I also started to look into different keyboards.</p>
+       </div>
+
+       <div class="container">
+            <h1 id="musicpro">Music Projects</h1><hr>
+            <ul>
+                <li>Milgram Project</li>
+                <li>Alien Stage</li>
+                <li>Kagerou Project</li>
+            </ul>
+       </div>
+    </main>
+</body>
+</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

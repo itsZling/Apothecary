@@ -1,4 +1,516 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests</title>
+    <link rel="stylesheet" href="indexStyles.css"/>
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body class="interestsbg">
+    <aside id="sidebar">
+    <ul>
+        <li>
+            <span class="logo">Apothecary</span>
+            <button  onclick=toggleSidebar() id="toggle-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+            </button>
+        </li>
+        <li>
+            <a href="index.html">
+                <!--Home Icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li class="active">
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <!--Interests Icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                <span>Interests</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            </button>
+            <ul class="sub-menu">
+            <div>
+                <li><a href="interests.html#characters">Characters</a></li>
+                <li><a href="interests.html#music">Music</a></li>
+                <li><a href="interests.html#games">Games</a></li>
+                <li><a href="interests.html#anime">Anime</a></li>
+                <li><a href="interests.html#manga">Manga</a></li>
+            </div>
+            </ul>
+        </li>
+
+        <li>
+            <a href="portfolio.html">
+                <!--Portfolio Icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-80q-33 0-56.5-23.5T40-160v-440h80v440h680v80H120Zm160-160q-33 0-56.5-23.5T200-320v-440h200v-80q0-33 23.5-56.5T480-920h160q33 0 56.5 23.5T720-840v80h200v440q0 33-23.5 56.5T840-240H280Zm0-80h560v-360H280v360Zm200-440h160v-80H480v80ZM280-320v-360 360Z"/></svg>
+                <span>Portfolio</span>
+            </a>
+        </li>
+        <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <!--Misc Icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                <span>Misc</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="misc.html#pjsk">PJSK Teiring</a></li>
+                    <li><a href="misc.html#skating">Inline Skating</a></li>
+                    <li><a href="misc.html#wingspan">Wingspan</a></li>
+                    <li><a href="misc.html#keyboard">Keyboard Modding</a></li>
+                    <li><a href="misc.html#musicpro">Music Projects</a></li>
+                </div>
+                
+            </ul>
+        </li>
+        <li>
+        </li>
+        
+    </ul>
+    </aside>
+    <main>
+        <!--Characters-->
+        <div class="container">
+            <h1 id="characters">Characters</h1>
+            <hr>
+            <p></p>
+        </div>
+
+
+        <!--Music-->
+        <div class="container">
+            <!--Music subsection-->
+            <h1 id="music">Music</h1><hr>
+            <p>I love expressing myself through my music tastes, and always get excited when I find a new song I like</p>
+            <p>
+                <a href="https://open.spotify.com/track/01XBs8BbtiZpHRywwh11H9?si=b72d8a3e2e8e4faf">
+                    <img class="album-cvr" src="Images/SELF-ish.jpg" alt="Will Wood and the Tape Worms">
+                </a>
+                <span>Dr. Sunshine Is Dead</span>
+            </p>
+
+            <audio controls src="Songs/Dr. Sunshine Is Dead.mp3"></audio>
+        </div>
+
+
+        <!--Games-->
+        <div class="container">
+            <h1 id="games">Games</h1>
+
+            <hr>
+            
+            
+            <video controls src="Videos/PJSK_Airi.mkv" width="350"></video>
+        </div>
+
+
+        <!--Anime-->
+        <div class="container">
+            <h1 id="anime">Anime</h1><hr>
+            <p>My earliest memory of anime is watching a random episode of <b>Naruto</b> at my friend's house during a sleepover. I was probably only in 7th grade, but it seemed like the coolest thing in the world at the time. With no sports or after-school activities at the time, I found myself doing anything that appeared in my recommendations. Eventually, I started tracking all the series I watched and now have over <b>24,000 hours</b> watched total across <b>300 different series</b>.</p>
+            <h2>Top 5 Favorite Anime</h2>
+            <p>The Apothecary Diaries</p>
+            <p>Erased</p>
+            <p>Odd Taxi</p>
+            <p>Nichijou</p>
+            <p>Talentless Nana</p>
+
+        </div>
+
+
+        <!--Manga-->
+        <div class="container">
+            <h1 id="manga">Manga</h1><hr>
+            <p>I started collecting manga around April 2022, with my first series being <b>Beastars</b> after finishing the second season. Since then, I've collected over <b>300 volumes</b> and read over <b>4,500 chapters</b>.</p>
+            <p>I enjoy returning to my room with some new volumes and reorganizing my bookshelf with the latest editions.</p>
+
+            <h2>Manga List</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Volumes owned</th>
+                    <th>Status</th>
+                    <th>Total Cost</th>
+                </tr>
+                
+                <!--Assassination Classroom-->
+                <tr>
+                    <td>Assassination Classroom</td>
+                    <td>21</td>
+                    <td>Finished</td>
+                    <td>$209.79</td>
+                </tr>
+
+                <!--Beast Complex-->
+                <tr>
+                    <td>Beast Complex</td>
+                    <td>3</td>
+                    <td>Publishing</td>
+                    <td>$38.97</td>
+                </tr>
+
+                <!--Beastars-->
+                <tr>
+                    <td>Beastars</td>
+                    <td>22</td>
+                    <td>Finished</td>
+                    <td>$285.78</td>
+                </tr>
+
+                <!--Berserk-->
+                <tr>
+                    <td>Berserk</td>
+                    <td>9</td>
+                    <td>Finished</td>
+                    <td>$149.97</td>
+                </tr>
+
+                <!--Black Paradox-->
+                <tr>
+                    <td>Black Paradox</td>
+                    <td>1</td>
+                    <td>Finished</td>
+                    <td>$19.99</td>
+                </tr>
+
+                <!--Blood Lad-->
+                <tr>
+                    <td>Blood Lad</td>
+                    <td>14</td>
+                    <td>Finished</td>
+                    <td>$140.00</td>
+                </tr>
+
+                <!--Blue Lock-->
+                <tr>
+                    <td>Blue Lock</td>
+                    <td>4</td>
+                    <td>Publishing</td>
+                    <td>$51.96</td>
+                </tr>
+
+                <!--Can't Stop Cursing You-->
+                <tr>
+                    <td>Can't Stop CUrsing You</td>
+                    <td>4</td>
+                    <td>Finished</td>
+                    <td>$52.00</td>
+                </tr>
+
+                <!--Chainsaw Man-->
+                <tr>
+                    <td>Chainsaw Man</td>
+                    <td>17</td>
+                    <td>Publishing</td>
+                    <td>$181.83</td>
+                </tr>
+
+                <!--Choujin X-->
+                <tr>
+                    <td>Choujin X</td>
+                    <td>4</td>
+                    <td>Publishing</td>
+                    <td>$59.96</td>
+                </tr>
+
+                <!--Dandadan-->
+                <tr>
+                    <td>Dandadan</td>
+                    <td>3</td>
+                    <td>Publishing</td>
+                    <td>$29.97</td>
+                </tr>
+
+                <!--Delicious in Dungeon-->
+                <tr>
+                    <td>Delicious in Dungeon</td>
+                    <td>14</td>
+                    <td>Finished</td>
+                    <td>$210.00</td>
+                </tr>
+
+                <!--Demon Slayer-->
+                <tr>
+                    <td>Demon Slayer</td>
+                    <td>23</td>
+                    <td>Finished</td>
+                    <td>$229.77</td>
+                </tr>
+
+                <!--Dissolving Classroom-->
+                <tr>
+                    <td>Dissolving Classroom</td>
+                    <td>1</td>
+                    <td>Finished</td>
+                    <td>$24.95</td>
+                </tr>
+
+                <!--Dorohedoro-->
+                <tr>
+                    <td>Dorohedoro</td>
+                    <td>23</td>
+                    <td>Finished</td>
+                    <td>$298.77</td>
+                </tr>
+                
+                <!--Fire Force-->
+                <tr>
+                    <td>Fire Force</td>
+                    <td>9</td>
+                    <td>Finished</td>
+                    <td>$98.91</td>
+                </tr>
+
+                <!--Fire Punch-->
+                <tr>
+                    <td>Fire Punch</td>
+                    <td>8</td>
+                    <td>Finished</td>
+                    <td>$111.92</td>
+                </tr>
+
+                <!--Gleipnir-->
+                <tr>
+                    <td>Gleipnir</td>
+                    <td>11</td>
+                    <td>Finished</td>
+                    <td>$142.89</td>
+                </tr>
+
+                <!--Gyo: The Death-Stench Creeps-->
+                <tr>
+                    <td>Gyo: The Death-Stench Creeps</td>
+                    <td>2</td>
+                    <td>Finished</td>
+                    <td>$22.99</td>
+                </tr>
+
+                <!--Hell's Paradise: Jigokoraku-->
+                <tr>
+                    <td>Hell's Paradise: Jigokuraku</td>
+                    <td>13</td>
+                    <td>Finished</td>
+                    <td>$168.87</td>
+                </tr>
+
+                <!--Jujutsu Kaisen-->
+                <tr>
+                    <td>Jujutsu Kaisen</td>
+                    <td>5</td>
+                    <td>Finished</td>
+                    <td>$52.95</td>
+                </tr>
+
+                <!--Junji Ito Story Collection-->
+                <tr>
+                    <td>Junji Ito Story Collection</td>
+                    <td>2</td>
+                    <td>Finished</td>
+                    <td>$47.99</td>
+                </tr>
+
+                <!--Kagerou Daze-->
+                <tr>
+                    <td>Kagerou Daze</td>
+                    <td>4</td>
+                    <td>Finished</td>
+                    <td>$52.00</td>
+                </tr>
+
+                <!--Kemono Jihen-->
+                <tr>
+                    <td>Kemono Jihen</td>
+                    <td>14</td>
+                    <td>Publishing</td>
+                    <td>$195.86</td>
+                </tr>
+
+                <!--Mashle Magic and Muscles-->
+                <tr>
+                    <td>Mashle Magic and Muscles</td>
+                    <td>12</td>
+                    <td>Finished</td>
+                    <td>$119.88</td>
+                </tr>
+
+                <!--Message to Adolf-->
+                <tr>
+                    <td>Message to Adolf</td>
+                    <td>4</td>
+                    <td>Finished</td>
+                    <td>$53.90</td>
+                </tr>
+
+                <!--Mob Psycho 100-->
+                <tr>
+                    <td>Mob Psycho 100</td>
+                    <td>7</td>
+                    <td>Finished</td>
+                    <td>$83.93</td>
+                </tr>
+
+                <!--Monotone Blue-->
+                <tr>
+                    <td>Monotone Blue</td>
+                    <td>1</td>
+                    <td>Finished</td>
+                    <td>$14.99</td>
+                </tr>
+
+                <!--Noragami: Stray God-->
+                <tr>
+                    <td>Noragami: Stray God</td>
+                    <td>7</td>
+                    <td>Finished</td>
+                    <td>$76.93</td>
+                </tr>
+
+                <!--One-Punch Man-->
+                <tr>
+                    <td>One-Punch Man</td>
+                    <td>3</td>
+                    <td>Publishing</td>
+                    <td>$29.97</td>
+                </tr>
+
+                <!--Oyasumi Punpun-->
+                <tr>
+                    <td>Oyasumi Punpun</td>
+                    <td>13</td>
+                    <td>Finished</td>
+                    <td>$164.93</td>
+                </tr>
+
+                <!--Parasyte-->
+                <tr>
+                    <td>Parasyte</td>
+                    <td>10</td>
+                    <td>Finished</td>
+                    <td>$87.92</td>
+                </tr>
+
+                <!--Pluto Urasawa x Tezuka-->
+                <tr>
+                    <td>Pluto Urasawa x Tezuka</td>
+                    <td>2</td>
+                    <td>Finished</td>
+                    <td>$25.98</td>
+                </tr>
+
+                <!--Ragna Crimson-->
+                <tr>
+                    <td>Ragna Crimson</td>
+                    <td>10</td>
+                    <td>Publishing</td>
+                    <td>$139.90</td>
+                </tr>
+
+                <!--Real Account-->
+                <tr>
+                    <td>Real Account</td>
+                    <td>6</td>
+                    <td>Finished</td>
+                    <td>$65.95</td>
+                </tr>
+
+                <!--Shangri-La Frontier-->
+                <tr>
+                    <td>Shangri-La Frontier</td>
+                    <td>16</td>
+                    <td>Publishing</td>
+                    <td>$207.84</td>
+                </tr>
+
+                <!--Soul Eater-->
+                <tr>
+                    <td>Soul Eater</td>
+                    <td>3</td>
+                    <td>Finished</td>
+                    <td>$68.97</td>
+                </tr>
+
+                <!--Summertime Rendering-->
+                <tr>
+                    <td>Summertime Rendering</td>
+                    <td>13</td>
+                    <td>Finished</td>
+                    <td>$134.94</td>
+                </tr>
+
+                <!--The Kurosagi Corpse Delivery Service-->
+                <tr>
+                    <td>The Kurosagi Corpse Delivery Service</td>
+                    <td>15</td>
+                    <td>Publishing</td>
+                    <td>$124.95</td>
+                </tr>
+
+                <!--Toilet Bound Hanako-kun-->
+                <tr>
+                    <td>Toilet Bound Hanako-kun</td>
+                    <td>10</td>
+                    <td>Publishing</td>
+                    <td>$120.90</td>
+                </tr>
+
+                <!--Tomie-->
+                <tr>
+                    <td>Tomie</td>
+                    <td>3</td>
+                    <td>Finished</td>
+                    <td>$34.99</td>
+                </tr>
+
+                <!--Undead Unluck-->
+                <tr>
+                    <td>Undead Unluck</td>
+                    <td>12</td>
+                    <td>Finished</td>
+                    <td>$119.88</td>
+                </tr>
+
+                <!--Uzamaki: Spiral into Horro-->
+                <tr>
+                    <td>Uzamaki: Spiral into Horror</td>
+                    <td>3</td>
+                    <td>Finished</td>
+                    <td>$27.99</td>
+                </tr>
+
+                <tr>
+                    <th>Sum</th>
+                    <th>381</th>
+                    <th>---</th>
+                    <th>$4,582.83</th>
+                </tr>
+            </table>
+            <h2>Top 5 Favorite Manga</h2>
+            <p>Beastars</p>
+            <p>Omniscient Reader's Viewpoint</p>
+            <p>Shangri-La Frontier</p>
+            <p>Kemono Jihen</p>
+            <p>Dungeon Meshi / Delicious in Dungeon</p>
+
+            <p>A benefit of owning physical copies of manga is the satisfaction of looking at the covers and spines, and how each series expresses itself. Here are some of my personal favorites on my bookshelf.</p>
+            <h2>Top 5 Favorite Manga Covers</h2>
+            <p>Gleipnir</p>
+            <p>Beastars</p>
+            <p>Kemono Jihen</p>
+            <p>Dungeon Meshi / Delicious in Dungeon</p>
+            <p>Parasyte</p>
+            <p>HM: Chainsaw man</p>
+        </div>
+    </main>
+    <div>
+
+    </div>
+</body>
+
+</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
